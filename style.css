@@ -1,0 +1,104 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 20px;
+}
+
+body {
+    background-color: rgba(244,245,249,255)
+}
+
+.container {
+    display: grid;
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr fit-content);
+    gap: 10px;
+}
+
+.header {
+    font-size: 200%;
+    background-color: rgb(250, 215, 215);
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.nav {
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 1%;
+    background-color: rgb(215, 221, 250);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    font-size: xx-large;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.pic {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.main {
+    padding: 1%;
+    color: rgb(39, 39, 39);
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.skills {
+    text-align: center;
+    padding: 5%;
+    color: rgb(39, 39, 39);
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#Contact {
+    padding: 5%;
+    color: rgb(39, 39, 39);
+    background-color: white;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.foot {
+    font-weight: bold;
+    padding: 5%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    background-color: rgb(215, 221, 250);
+}
+
+h2 {
+    color: rgb(0, 42, 255);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#letsConnect {
+    text-align: center;
+}
