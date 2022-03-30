@@ -14,7 +14,6 @@ $(document).ready(function() {
         scrollTop: $(this.hash).offset().top - 50
         // Perform the action in 1000 milliseconds
       }, 1000 );
-      $(".scroll").fadeOut();
-      $(".scroll").fadeIn();
     });
   })
+

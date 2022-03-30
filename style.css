@@ -1,15 +1,44 @@
+@font-face {
+    font-family: "MuseoSans";
+    src: url(fonts/MuseoSans_500.otf);
+}
+
+hr {
+    margin-left: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.top_line {
+    margin-top: 1%;
+}
+
+.bot_line {
+    margin-bottom: 1%;
+}
+
+:root {
+    --CREAM: rgba(228,224,213,255);
+    --LIGHTBLUE: rgb(158, 175, 191);
+    --MEDBLUE: rgb(103, 122, 156);
+    --DARKBLUE: rgb(66, 93, 120);
+    --BLACK: rgb(70, 69, 74);
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: MuseoSans;
     padding-left: 1%;
     padding-right: 1%;
     border-radius: 20px;
 }
 
 body {
-    background-color: rgba(244,245,249,255)
+    background-color: var(--CREAM)
 }
 
 .container {
+    -webkit-animation: fadein 1200ms;
     display: grid;
     height: auto;
     width: auto;
@@ -19,17 +48,19 @@ body {
 }
 
 .header {
+    animation: slideInFromLeft 600ms ease-in;
     font-size: 200%;
-    background-color: rgb(250, 215, 215);
+    background-color: var(--MEDBLUE);
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
 .nav {
+    animation: slideInFromRight 800ms ease-in;
     font-weight: bold;
     border-radius: 6px;
     padding: 1%;
-    background-color: rgb(215, 221, 250);
+    background-color: var(--LIGHTBLUE);
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: right;
@@ -39,43 +70,49 @@ body {
 }
 
 .about {
+    animation: slideInFromLeft 1000ms ease-in;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgb(39, 39, 39);
+    color: var(--BLACK);
     font-weight: bold;
-    font-size: xx-large;
+    font-size: larger;
     background-color: white;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
 .pic {
+    animation: slideInFromRight 1200ms ease-in;
     grid-column-start: 3;
     grid-column-end: 5;
 }
 
 .main {
+    font-size: large;
     padding: 1%;
-    color: rgb(39, 39, 39);
+    color: var(--BLACK);
     background-color: white;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
 .skills {
+    font-size: large;
     text-align: center;
     padding: 5%;
-    color: rgb(39, 39, 39);
+    color: var(--BLACK);
     background-color: white;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
 #Contact {
+    text-align: center;
+    font-size: large;
     padding: 5%;
-    color: rgb(39, 39, 39);
+    color: var(--BLACK);
     background-color: white;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -87,11 +124,12 @@ body {
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
-    background-color: rgb(215, 221, 250);
+    background-color: white;
 }
 
 h2 {
-    color: rgb(0, 42, 255);
+    color: var(--DARKBLUE);
+    font-size: xx-large;
 }
 
 a {
@@ -101,4 +139,33 @@ a {
 
 #letsConnect {
     text-align: center;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(15%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromLeft {
+0% {
+    transform: translateX(-15%);
+}
+
+100% {
+    transform: translateX(0);
+}
 }
