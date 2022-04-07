@@ -165,6 +165,7 @@ body {
     grid-column-end: 5;
     text-align: center;
     background-color: var(--WHITE);
+    margin-bottom: 3%;
 }
 
 #letsConnect {
@@ -256,5 +257,9 @@ body {
         font-size: smaller;
         grid-column-start: 1;
         grid-column-end: 5;
+    }
+    
+    .foot {
+        margin-bottom: 5%;
     }
 }
