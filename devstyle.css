@@ -1,0 +1,354 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(fonts/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(fonts/Inter/static/Inter-Bold.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+img {
+    width:100%;
+}
+
+h1 {
+    font-family: "Inter-Bold";
+    padding: 0.15em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#navigationSelector {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+
+#navigationSelector:hover {
+    padding: 0% 3% 0% 3%;
+    transform: scale(1.2);
+    color: black;
+    cursor: pointer;
+}
+
+#footerLogos {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.projectLogos a {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+#footerLogos:hover {
+    padding: 0% 5% 2% 5%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+a:visited { 
+    color: inherit;
+}
+
+#mainHeadshot {
+    max-width:400px;
+    border-radius: 20px;
+}
+
+#uberLogo {
+    max-width: 325px;
+    border-radius: 20px;
+}
+
+#secondHeadshot {
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+#studyRoomLogo {
+    max-width: 275px;
+    border-radius: 20px;
+}
+
+#footerLogos {
+    max-width: 85px;
+    padding: 2% 5% 2% 5%;
+    border-radius: 20px;
+}
+
+body {
+    background-color: white;
+    font-family: "Inter-Regular";
+}
+
+.container {
+    -webkit-animation: fadein 1200ms;
+    color: #484848;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5fr);
+    display: grid;
+    box-sizing: border-box;
+    padding: 7% 7% 44% 7%;
+    row-gap: 5%;
+    column-gap: 5%;
+}
+
+.nav {
+    color: white;
+    background-color: #4663AC;
+    border-radius: 0px 0px 34px 34px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    animation: slideInFromLeft 500ms ease-in;
+    grid-column-start: auto;
+    grid-column-end: 2;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    padding: 2%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    scroll-margin-top: 220px;
+}
+
+.mainphoto {
+    animation: slideInFromRight 600ms ease-in;
+    grid-column-start: 2;
+    grid-column-end: auto;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    padding: 5%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.uberphoto {
+    grid-column-start: auto;
+    grid-column-end: 2;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    grid-row-start: 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 12%;
+}
+
+.experience {
+    grid-column-start: 2;
+    grid-column-end: auto;
+    grid-row-start: 2;
+    background-color: #F0F0F0;
+    padding: 2%;
+    border-radius: 25px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    scroll-margin-top: 235px;
+}
+
+.ventures {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    background-color: #F0F0F0;
+    padding: 4%;
+    border-radius: 25px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    scroll-margin-top: 175px;
+}
+
+.secondaryphoto {
+    grid-column-start: 2;
+    grid-column-end: auto;
+    grid-row-start: 3;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 12%;
+}
+
+.projects {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 0% 4% 2% 4%;
+    scroll-margin-top: 235px;
+}
+
+.projectLogos {
+    display: flex;
+    justify-content: center;
+}
+
+.projectLogos a {
+    padding: 2%;
+}
+
+.projectLogos a:hover {
+    padding: 2% 1% 0% 1%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: smaller;
+    text-align: center;
+}
+
+/* Tablet */
+@media only screen and (max-width: 939px){
+    #navigationSelector {
+        font-size: 1em;
+    }
+
+    #footerLogos {
+        max-width: 40px;
+    }
+
+    .container {
+        padding: 7% 2% 40% 2%;
+    }
+
+    .experience {
+        padding: 5%;
+        font-size: medium;
+    }
+
+    .ventures {
+        padding: 5%;
+        font-size: medium;
+    }
+
+    .footer {
+        padding: 5%;
+    }
+
+    footer {
+        padding: 10% 0% 0% 0%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 478px) {
+    #navigationSelector {
+        font-size: 0.5em;
+    }
+
+    .container {
+        padding: 7% 7% 40% 7%;
+        font-size: 0.65em;
+    }
+
+    .experience {
+        font-size: 0.65em;
+    }
+    
+    .ventures {
+        font-size: 0.65em;
+    }
+
+    #footerLogos {
+        max-width: 35px;
+        padding: 2% 5% 2% 5%;
+        border-radius: 20px;
+    }
+}
+
+/* Ultra Thin Device */
+@media screen and (max-width: 338px) {
+    #navigationSelector {
+        display: none;
+    }
+
+    .container {
+        padding: 7% 7% 55% 7%;
+        font-size: 0.5em;
+    }
+
+    #footerLogos {
+        max-width: 20px;
+        padding: 2% 5% 2% 5%;
+        border-radius: 20px;
+    }
+
+    footer p{
+        padding: 20%;
+        font-size: 0.02em;
+    }
+}
+
+/* Animations */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(15%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromLeft {
+0% {
+    transform: translateX(-15%);
+}
+
+100% {
+    transform: translateX(0);
+}
+}
